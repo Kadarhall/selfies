@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# require 'active_record'
+# require_relative 'connection'
+# require_relative '../models/selfie'
+
+selfies = Selfie.create([
+  { body: "Hello World" },
+  { body: "This is my second selfie" },
+  { body: "Which cool features should I add?" },
+  { body: "It’s like Twitter, without friends." }
+])
